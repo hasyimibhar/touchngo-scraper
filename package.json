@@ -1,0 +1,25 @@
+{
+  "name": "touchngo-scraper",
+  "version": "1.0.0-alpha",
+  "main": "dist",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
+    "build": "babel src -s -D -d dist --presets es2015,stage-0",
+    "start": "node dist"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "puppeteer": "^1.10.0",
+    "request": "^2.88.0",
+    "strftime": "^0.10.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^5.9.0",
+    "nodemon": "^1.18.6"
+  }
+}
