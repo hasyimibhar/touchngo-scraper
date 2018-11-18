@@ -22,4 +22,6 @@ COPY package.json .
 COPY --from=builder /src/dist dist
 COPY --from=builder /src/node_modules node_modules
 
+ENV PORT 3000
+
 CMD node dist/index.js
